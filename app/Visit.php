@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Website extends Model
+class Visit extends Model
 {
     protected $guarded = ['id'];
 
-    public function visits()
+    public function website()
     {
-        return $this->hasMany(Visit::class);
+        return $this->belongsTo(Website::class);
     }
 }
