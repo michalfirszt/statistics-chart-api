@@ -1,9 +1,9 @@
 <?php
 
-use App\Website;
+use App\Visit;
 use Illuminate\Database\Seeder;
 
-class WebsiteSeeder extends Seeder
+class VisitSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class WebsiteSeeder extends Seeder
      */
     public function run()
     {
-        factory(Website::class, 5)->create();
+        factory(Visit::class, 40)->create();
     }
 }
