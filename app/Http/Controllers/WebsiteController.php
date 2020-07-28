@@ -14,7 +14,9 @@ class WebsiteController extends Controller
      */
     public function index()
     {
-        //
+        $websites = Website::with('visits')->get();
+
+        return response()->json($websites);
     }
 
     /**
