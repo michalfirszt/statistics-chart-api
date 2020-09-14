@@ -26,7 +26,7 @@ class AddStarsToWebsitesTable extends Migration
     public function down()
     {
         Schema::table('websites', function (Blueprint $table) {
-            //
+            $table->dropColumn('stars');
         });
     }
 }
