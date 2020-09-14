@@ -8,5 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Website::class, function (Faker $faker) {
     return [
         'name' => $faker->domainName,
+        'stars' => $faker->numberBetween(0, 10),
     ];
 });
